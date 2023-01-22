@@ -1,2 +1,2 @@
 # PersonalWebsite
-Personal website to display my projects and course work
+Portfolio website to display my projects and course work
