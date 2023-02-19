@@ -1,5 +1,7 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
 
 
 const About = () => {
@@ -13,14 +15,37 @@ const About = () => {
                     />
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in tortor non diam sagittis bibendum. Nullam facilisis ornare euismod. Sed molestie mi vitae dolor scelerisque laoreet. Vestibulum aliquet sapien ac suscipit dapibus. Quisque feugiat, risus id scelerisque venenatis, erat risus iaculis felis, ac pharetra tellus enim eget neque. Duis finibus odio at lorem imperdiet, nec suscipit lorem auctor. Sed ultrices elit elit, eget sagittis enim fringilla ac. In varius nulla at lacus laoreet bibendum. Nullam aliquet massa eget metus sollicitudin vestibulum. Maecenas cursus ac mauris eget varius. Nam varius est ac arcu bibendum iaculis. Donec pretium erat ac aliquet efficitur. Aliquam at felis ligula.
+                    I'm a very ambitious software developer and student looking for a role in an established technicaly company with the oppertunity to work with latest technologies and on challenging projects.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in tortor non diam sagittis bibendum. Nullam facilisis ornare euismod. Sed molestie mi vitae dolor scelerisque laoreet. Vestibulum aliquet sapien ac suscipit dapibus. Quisque feugiat, risus id scelerisque venenatis, erat risus iaculis felis, ac pharetra tellus enim eget neque. Duis finibus odio at lorem imperdiet, nec suscipit lorem auctor. Sed ultrices elit elit, eget sagittis enim fringilla ac. In varius nulla at lacus laoreet bibendum. Nullam aliquet massa eget metus sollicitudin vestibulum. Maecenas cursus ac mauris eget varius. Nam varius est ac arcu bibendum iaculis. Donec pretium erat ac aliquet efficitur. Aliquam at felis ligula.
+                    I'm quietly confident, naturally curious, and perpetually working on improving my abilities one step at a time.                    
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in tortor non diam sagittis bibendum. Nullam facilisis ornare euismod. Sed molestie mi vitae dolor scelerisque laoreet. Vestibulum aliquet sapien ac suscipit dapibus. Quisque feugiat, risus id scelerisque venenatis, erat risus iaculis felis, ac pharetra tellus enim eget neque. Duis finibus odio at lorem imperdiet, nec suscipit lorem auctor. Sed ultrices elit elit, eget sagittis enim fringilla ac. In varius nulla at lacus laoreet bibendum. Nullam aliquet massa eget metus sollicitudin vestibulum. Maecenas cursus ac mauris eget varius. Nam varius est ac arcu bibendum iaculis. Donec pretium erat ac aliquet efficitur. Aliquam at felis ligula.
+                    If I need to define myself in a sentence that would be a family person, sports fanatic, and tech obsessed!  
                 </p>
+            </div>
+
+            <div className='stage-cube-cont'>
+                <div className='cubespinner'>
+                    <div className='face1'>
+                        <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+                    </div>
+                    <div className='face2'>
+                        <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                    </div>
+                    <div className='face3'>
+                        <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                    </div>
+                    <div className='face4'>
+                        <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+                    </div>
+                    <div className='face5'>
+                        <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+                    </div>
+                    <div className='face6'>
+                        <FontAwesomeIcon icon={faGitAlt} color="#" />
+                    </div>
+                </div>
             </div>
         </div> 
     )
