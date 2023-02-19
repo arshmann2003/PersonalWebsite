@@ -21,6 +21,8 @@ const Sidebar = () =>(
             <NavLink exact="true" activeclassname="active" className="contact-link" to='/contact'>
                 <FontAwesomeIcon icon={faEnvelope} color = "#4d4d4e"/>
             </NavLink>
+            {/* Add git hub link after polishing up account and projects */}
+
         </nav>
     </div>
 )

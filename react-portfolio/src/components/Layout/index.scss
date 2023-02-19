@@ -1,0 +1,92 @@
+.container {
+    width: 100%;
+    will-change: contents;
+    height: 100%;
+    min-height: 566px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+
+}
+
+.tags {
+    color: #ffd700;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    font-size: 18px;
+    font-family: 'La Belle Aurore', cursive;
+}
+
+
+.about-page{
+    .text-zone {
+        // color:blue;
+
+        position: absolute;
+        left: 10%;
+        top: 30%;
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+        // opacity: 0;
+        
+        // animation: bounceIn 1s 1s;
+        // animation-fill-mode: forwards;
+
+        h1{
+            font-size: 53px;
+            font-family: 'Coolvetica';
+            color:skyblue;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: 10px;
+
+            &::before{
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                position: absolute;
+                
+                margin-top: -10px;
+                left:-10px;
+                opacity: 0.6;
+                line-height: 18px;
+            }
+
+            &::after{
+                content: '<h1 />';
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                line-height: 18px;
+                position: absolute;
+                left: -30px;
+                bottom: -20px;
+                margin-left: 20px;
+                opacity: 0.6;
+            }
+        }
+        p{
+            font-style: 13px;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 300;
+            min-width: fit-content;
+            animation: pulse 1s;
+
+            &:nth-of-type(1){
+                animation-delay: 0.1s;
+            }
+            &:nth-of-type(2){
+                animation-delay: 0.2s;
+            }
+            &:nth-of-type(3){
+                animation-delay: 0.3s;
+            }
+        }
+    }
+}

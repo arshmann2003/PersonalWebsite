@@ -4,7 +4,7 @@
 var RENDERER = {
 	INIT_RAIN_DROP_COUNT : 200,
 	RAIN_DROP_COUNT : 1,
-	HUMAN_COUNT : 1,
+	HUMAN_COUNT : 5,
 	COLOR : 'hsl(%hue, 20%, %luminance%)',
 	HUE_OFFSET : Math.PI / 1000,
 	LUMINANCE_OFFSET : Math.PI / 1500,
