@@ -2,26 +2,41 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
+import { useEffect, useState } from 'react'
 
 
 const About = () => {
+
+    const [letterClass, setLetterClass] = useState('text-animate-slow')
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 3000)
+    }, [] )
+
     return (
-        <div className='container about-page'>
+        <>
+            <div className='container about-page'>
             <div className='text-zone'>
                 <h1>
                     <AnimatedLetters 
+                        letterClass={letterClass}
                         strArray = { ['A','b','o','u','t',' ','m','e'] }
                         idx={15}
                     />
                 </h1>
                 <p>
-                    I'm a very ambitious software developer and student looking for a role in an established technicaly company with the oppertunity to work with latest technologies and on challenging projects.
+                    I am a computer science student at Simon Fraser University. Over the past few years, I have completed coursework in various topics including software engineering, data structures and algorithms, computer systems, object-oriented design in Java, discrete maths, and intro to web development.
                 </p>
                 <p>
-                    I'm quietly confident, naturally curious, and perpetually working on improving my abilities one step at a time.                    
+                    While my studies are a significant part of my life, I also value staying active and maintaining a healthy work-life balance. In my free time, I enjoy playing hockey and watching sports, particularly basketball and UFC. These hobbies allow me to unwind and recharge, while also giving me a sense of camaraderie and teamwork.
                 </p>
+                {/* <p>
+                    I am also proud of my unique traits and characteristics, such as my attention to detail, my creativity, and my ability to think critically and problem-solve. These skills have helped me to excel in my studies and will continue to serve me well as I pursue my career in the field of computer science.
+                </p> */}
                 <p>
-                    If I need to define myself in a sentence that would be a family person, sports fanatic, and tech obsessed!  
+                    I am excited about what the future holds and look forward to leveraging my skills, knowledge, and passion for computer science to make a positive impact in the world.
                 </p>
             </div>
 
@@ -47,7 +62,8 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div> 
+            </div> 
+        </>
     )
 }
 
