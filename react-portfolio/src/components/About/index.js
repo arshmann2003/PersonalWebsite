@@ -27,7 +27,7 @@ const About = () => {
                     />
                 </h1>
                 <p>
-                    I am a computer science student at Simon Fraser University. Over the past few years, I have completed coursework in various topics including software engineering, data structures and algorithms, computer systems, object-oriented design in Java, discrete maths, and intro to web development.
+                    I am a computer science student at Simon Fraser University. Over the past year, I have completed coursework in various topics including software engineering, data structures and algorithms, computer systems, object-oriented design in Java, discrete maths, and intro to web development.
                 </p>
                 <p>
                     While my studies are a significant part of my life, I also value staying active and maintaining a healthy work-life balance. In my free time, I enjoy playing hockey and watching sports, particularly basketball and UFC. These hobbies allow me to unwind and recharge, while also giving me a sense of camaraderie and teamwork.
