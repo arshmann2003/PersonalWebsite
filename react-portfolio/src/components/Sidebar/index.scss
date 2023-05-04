@@ -1,13 +1,17 @@
 
-
+.bar{
+  height: 50%;
+}
 .nav-bar {
   background: black;
-  width: 60px;
+  width: 75px;
   height: 100%;
-  position: absolute;
   top: 0;
   z-index: 3;
   min-height: 500px;
+  padding-left: 30px;
+  position: fixed;
+  transform: translateX(-50%);
 
   .logo {
     display: none;
@@ -83,6 +87,11 @@
     a.about-link {
       &:after {
         content: 'ABOUT';
+      }
+    }
+    a.projects-link{
+      &:after {
+        content: 'PROJECTS'
       }
     }
 
